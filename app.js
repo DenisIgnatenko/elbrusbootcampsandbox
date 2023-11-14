@@ -548,4 +548,5 @@ function isAnagram(string2, string2) {
 }
 console.log('sad');
 
+console.log('2');
 // comment
