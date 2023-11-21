@@ -9,20 +9,20 @@ function generateRange(start, end, step) {
 console.log(generateRange(2, 10, 2));
 
 function cycleGo() {
-  let string = '';
+  let string = "";
   for (let i = 20; i >= 0; i -= 4) {
     string += i;
   }
-  return (string += 'поехали!');
+  return (string += "поехали!");
 }
 
 console.log(cycleGo());
 
 function trimSpaces(string) {
-  return string.replace(/[' ']/g, '');
+  return string.replace(/[' ']/g, "");
 }
 
-console.log(trimSpaces('Ко с мо сsdasdasd '));
+console.log(trimSpaces("Ко с мо сsdasdasd "));
 
 function filterArray(arrStr, num) {
   return arrStr.filter((element) => element.length === num);
@@ -30,9 +30,9 @@ function filterArray(arrStr, num) {
 
 console.log(
   filterArray(
-    ['Коррекция', 'Виток', 'Воздух', 'Газоанализатор', 'Температура'],
-    6
-  )
+    ["Коррекция", "Виток", "Воздух", "Газоанализатор", "Температура"],
+    6,
+  ),
 );
 
 function oppositeNumber(number) {
@@ -63,12 +63,12 @@ function canAccessWebsite(age) {
 const score = 75;
 const result =
   score >= 90
-    ? 'Отлично!'
+    ? "Отлично!"
     : score >= 70
-      ? 'Хорошо'
+      ? "Хорошо"
       : score >= 50
-        ? 'Удовлетворительно'
-        : 'Плохо';
+        ? "Удовлетворительно"
+        : "Плохо";
 console.log(result);
 
 console.log(canAccessWebsite(12));
@@ -111,54 +111,54 @@ console.log(canBuy(2000, 1500, 16, false));
 console.log(canBuy(2000, 2000, 15, false));
 
 function start() {
-  return 'start';
+  return "start";
 }
 
 function run() {
   console.log(start());
-  return start() + 'finish' + start();
+  return start() + "finish" + start();
 }
 console.log(run());
 run();
 
 function a() {
-  console.log('in a');
+  console.log("in a");
   return c();
 }
 
 function b() {
-  console.log('in b');
-  return 'Yes';
+  console.log("in b");
+  return "Yes";
 }
 
 function c() {
-  console.log('in c');
+  console.log("in c");
   return b;
 }
 
 a();
 a();
 
-const usersAge = [2040 - 2033, '20' - 6];
+const usersAge = [2040 - 2033, "20" - 6];
 console.log(usersAge);
 
-const userNames = new Array('Вася');
+const userNames = new Array("Вася");
 
 function square(el) {
   return el * el;
 }
 
-let users = ['Anna', 'Victoria', 'Kate'];
-users[2] = 'Cristine';
+let users = ["Anna", "Victoria", "Kate"];
+users[2] = "Cristine";
 console.log(users);
 
-users.push('Ivan');
-users.unshift('Sergey');
+users.push("Ivan");
+users.unshift("Sergey");
 
 users.pop();
 console.log(users);
 
-const roles = ['user', 'admin', 'manager', 'superuser'];
+const roles = ["user", "admin", "manager", "superuser"];
 
 const res = roles.slice(2);
 console.log(roles); // [ 'user', 'admin', 'manager', 'superuser' ]
@@ -186,7 +186,7 @@ console.log(res4);
 // console.log(res8);
 // console.log(roles);
 
-const newRoles = ['sysadmin', 'developer'];
+const newRoles = ["sysadmin", "developer"];
 const res9 = roles.concat(newRoles);
 console.log(res9);
 
@@ -194,11 +194,11 @@ function fizzBuzz(n) {
   const fizzBuzzArray = [];
   for (let i = 1; i <= n; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-      fizzBuzzArray.push('FizzBuzz');
+      fizzBuzzArray.push("FizzBuzz");
     } else if (i % 3 === 0) {
-      fizzBuzzArray.push('Fizz');
+      fizzBuzzArray.push("Fizz");
     } else if (i % 5 === 0) {
-      fizzBuzzArray.push('Buzz');
+      fizzBuzzArray.push("Buzz");
     } else {
       fizzBuzzArray.push(i);
     }
@@ -211,8 +211,8 @@ console.log(fizzBuzz(10));
 function fizzbuzztern(n) {
   const fizzBuzzArray = [];
   for (let i = 1; i <= n; i++) {
-    const fizz = i % 3 === 0 ? 'Fizz' : '';
-    const buzz = i % 5 === 0 ? 'Buzz' : '';
+    const fizz = i % 3 === 0 ? "Fizz" : "";
+    const buzz = i % 5 === 0 ? "Buzz" : "";
     fizzBuzzArray.push(fizz + buzz || n);
   }
 }
@@ -220,7 +220,7 @@ function fizzbuzztern(n) {
 console.log(fizzbuzztern(10));
 
 function zeroOne(num) {
-  let zeroOnestring = '';
+  let zeroOnestring = "";
   for (let i = 1; i <= num; i++) {
     zeroOnestring += i % 2 === 0 ? 0 : 1;
   }
@@ -275,7 +275,7 @@ console.log(evaluate([3, 4, 4, 4, 4, 4, 5]));
 function sumPositiveReduce(numbersArr) {
   return numbersArr.reduce(
     (result, number) => (number > 0 ? result + number : result),
-    0
+    0,
   );
 }
 
@@ -307,12 +307,12 @@ console.log(positiveSquares([-10, 3, 10]));
 
 function isAnagram(string2, string2) {
   return (
-    string1.split('').sort().join('') === string2.split('').sort().join('')
+    string1.split("").sort().join("") === string2.split("").sort().join("")
   );
 }
 
 function isAnagram2(str1, str2) {
-  return str1.split('').sort().join('') === str2.split('').sort().join('');
+  return str1.split("").sort().join("") === str2.split("").sort().join("");
 }
 
 // //!* Задача: Написать функцию, которая возвращает сумму всех
@@ -346,10 +346,10 @@ console.log(divisorsSum(6));
 //
 // /* const numbers = [0, 1, 2, 3, "x", 5, 6, 7, 8, 9, "x", 11, 12, 13, 14]; */
 
-const numbers = [0, 1, 2, 3, 'x', 5, 6, 7, 8, 9, 'x', 11, 12, 13, 14];
+const numbers = [0, 1, 2, 3, "x", 5, 6, 7, 8, 9, "x", 11, 12, 13, 14];
 
 for (index in numbers) {
-  if (numbers[index] === 'x') {
+  if (numbers[index] === "x") {
     numbers.splice(index, 1);
   }
 }
@@ -365,8 +365,8 @@ function arrayPlusArray(arr1, arr2) {
   return arr1.concat(arr2);
 }
 
-arr1 = [1, '2', 3];
-arr2 = ['21', 121];
+arr1 = [1, "2", 3];
+arr2 = ["21", 121];
 console.log(arrayPlusArray(arr1, arr2));
 
 const numbersminmax = [0, 1, 2, 3, 5, 6, 7, 8, 9, 11, 12, 13, 14];
@@ -380,7 +380,7 @@ function getMinMax(arr) {
 console.log(getMinMax(numbersminmax));
 
 function digitize(n) {
-  resultArray = String(n).split('').reverse();
+  resultArray = String(n).split("").reverse();
   for (i = 0; i < resultArray.length; i++) {
     resultArray[i] = Number(resultArray[i]);
   }
@@ -418,7 +418,7 @@ console.log(digitize(35231));
 //
 // решение от chatGPT
 
-const tasks = ['Задача 1'];
+const tasks = ["Задача 1"];
 
 function addTask(taskName) {
   tasks.push(taskName);
@@ -451,3 +451,5 @@ function gitAdd() {
 function gitCommit() {
   return false;
 }
+
+function newStash() {}
