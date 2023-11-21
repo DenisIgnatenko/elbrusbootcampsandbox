@@ -547,7 +547,7 @@ function isAnagram(string2, string2) {
   );
 }
 console.log('sad');
-
+console.log('asdasd');
 console.log('2');
 
 // //!* Задача: Написать функцию, которая возвращает сумму всех

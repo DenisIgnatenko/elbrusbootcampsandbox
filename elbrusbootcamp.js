@@ -447,3 +447,7 @@ function taskPrioritize(taskname) {
 function gitAdd() {
   return false;
 }
+
+function gitCommit() {
+  return false;
+}
