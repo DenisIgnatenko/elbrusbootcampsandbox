@@ -453,3 +453,5 @@ function gitCommit() {
 }
 
 function newStash() {}
+
+function sendToEmail() {}
