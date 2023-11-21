@@ -443,3 +443,7 @@ function taskPrioritize(taskname) {
   }
   return taskIndex === 0;
 }
+
+function gitAdd() {
+  return true;
+}
