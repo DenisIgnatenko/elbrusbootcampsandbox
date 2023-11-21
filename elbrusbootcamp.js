@@ -445,5 +445,5 @@ function taskPrioritize(taskname) {
 }
 
 function gitAdd() {
-  return true;
+  return false;
 }
